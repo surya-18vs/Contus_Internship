@@ -1,4 +1,4 @@
-Part-1 ------ section 2
+# Part-1 ------ section 2
 
 f = open("Titanic-Dataset.csv", "r")
 
