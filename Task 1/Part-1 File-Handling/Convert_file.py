@@ -1,3 +1,6 @@
+# Part-1 --------- section 3
+
+
 import json
 
 f = open("Titanic-Dataset.csv", "r")
