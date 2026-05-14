@@ -1,3 +1,5 @@
+# Part-2 ---------- section 1
+
 import numpy as np
 
 f = open("Titanic-Dataset.csv", "r")
