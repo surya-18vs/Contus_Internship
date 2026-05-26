@@ -1,0 +1,31 @@
+db.movie_data.insertMany([
+  {"_id":1,"Title":"AAA","duration":3,"language":"english"},
+  {"_id":2,"Title":"AAA","duration":3,"language":"english"},
+  {"_id":3,"Title":"AAA","duration":3,"language":"english"},
+  {"_id":4,"Title":"AAA","duration":3,"language":"english"},
+  {"_id":5,"Title":"AAA","duration":3,"language":"english"},
+  {"_id":6,"Title":"AAA","duration":3,"language":"english"},
+  {"_id":7,"Title":"AAA","duration":3,"language":"english"},
+  {"_id":8,"Title":"AAA","duration":3,"language":"english"},
+  {"_id":9,"Title":"AAA","duration":3,"language":"english"},
+  {"_id":10,"Title":"AAA","duration":3,"language":"english"},
+  {"_id":11,"Title":"AAA","duration":3,"language":"english"},
+  {"_id":12,"Title":"AAA","duration":3,"language":"english"},
+  {"_id":13,"Title":"AAA","duration":3,"language":"english"},
+  {"_id":14,"Title":"AAA","duration":3,"language":"english"},
+  {"_id":15,"Title":"AAA","duration":3,"language":"english"},
+  {"_id":16,"Title":"AAA","duration":3,"language":"english"},
+  {"_id":17,"Title":"AAA","duration":3,"language":"english"},
+  {"_id":18,"Title":"AAA","duration":3,"language":"english"}
+])      ////Inserting data to Database///
+
+db.movie_data.find()   ////get the output of inserted database////
+
+
+db.reviews.aggregate([
+  {
+    $group: {
+      _id:"$movieId",totalReviews:{$sum:1}
+    }
+  }
+  ])    /////perform aggregation to calculate the rating of movie ////
